@@ -13,7 +13,7 @@
 - `main` 要求通过 PR 更新，合并前必须通过 `build`、三项 `CodeQL (swift/python/actions)` 任务及 `CodeQL` 安全结果检查、保持分支最新并处理所有讨论；检查限定为对应 GitHub App 提供，规则同样适用于管理员。禁止强推和删除，要求线性历史。
 - 当前为单维护者仓库，审批人数为 0；可在增加维护者后提高审批人数。
 - 已开启 Dependabot 漏洞告警与安全更新、密钥扫描及推送保护。GitHub Actions 依赖每周检查版本更新。
-- CodeQL 工作流扫描 Swift 应用、Python 脚本和 GitHub Actions；Swift 使用现有构建脚本编译完整应用，避免只扫描核心测试目标。PR、主分支更新和每周定时运行触发扫描。
+- CodeQL 工作流扫描 Swift 应用、Python 脚本和 GitHub Actions；Swift 使用 `scripts/build-codeql.sh` 编译完整应用源码，包含 UI 和应用入口，不执行图标生成、签名或发布打包。普通发布构建仍使用 `scripts/build.sh`。PR、主分支更新和每周定时运行触发扫描。
 - 普通构建工作流只读仓库；CodeQL 分析任务额外获得 `security-events: write`，仅用于上传扫描结果，不注入私密凭据或自动发布版本。
 
 安全扫描结果见[仓库安全页面](https://github.com/zhawlll/futures-market-monitor/security)，工作流执行结果见[GitHub Actions](https://github.com/zhawlll/futures-market-monitor/actions)。安全扫描不替代代码评审、测试或第三方数据使用条件核对。
