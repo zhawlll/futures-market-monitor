@@ -65,7 +65,8 @@ MonitorTableView 用一个共享纵向滚动容器放置首列及行情区域，
 | 显示/关闭/置顶窗口 | 当前macOS用户 | AppKit本机窗口API；无需辅助功能权限 |
 | 手动联网自检 | 启动命令的用户 | --live-check明确发起第三方网络请求 |
 | 构建产物写入 | 执行构建脚本的用户 | 指定输出目录、本地签名，无root操作 |
-| CI构建与自检 | GitHub runner | contents: read，不注入Secrets，不上传或自动发布 |
+| CI构建与自检 | GitHub runner | contents: read，不注入Secrets，不上传构建产物或自动发布 |
+| CodeQL安全扫描 | GitHub runner | contents: read、security-events: write；仅上传安全分析结果，不注入Secrets或发布 |
 
 应用没有多用户服务、角色声明、数据库、RLS、交易操作、麦克风/摄像头/定位/辅助功能请求。当前应用未启用App Sandbox；操作系统当前用户权限是本地运行边界。不要将公开协议token当作账号身份或服务授权。
 

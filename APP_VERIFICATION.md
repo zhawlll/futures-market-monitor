@@ -39,6 +39,6 @@
 
 已尝试启动离线演示设置窗口，但窗口自动化工具无法绑定本次构建的应用，其应用标识解析仍指向旧标识，不能可靠操作并验收。真实窗口点击、滚动手势、列宽拖动与重启恢复、键盘、VoiceOver、睡眠唤醒及 Intel 运行尚未完成验收。随文档提供的图片使用人工演示数据，不代表实时行情或交互测试通过。
 
-应用采用 ad-hoc 本地签名，未进行 Developer ID 签名或 Apple 公证，未启用 App Sandbox。远端 CI 执行状态未验证。
+应用采用 ad-hoc 本地签名，未进行 Developer ID 签名或 Apple 公证，未启用 App Sandbox。首次推送提交 `69f7826` 的两次远端离线 CI 执行均通过：[主分支执行](https://github.com/zhawlll/futures-market-monitor/actions/runs/37925334866)、[标签推送执行](https://github.com/zhawlll/futures-market-monitor/actions/runs/37925335637)。此结果不代表后续提交或新增安全扫描已通过。
 
 测试命令和验收范围见 [测试与验证](doc/tests.md)。
