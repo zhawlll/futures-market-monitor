@@ -44,7 +44,8 @@ jobs:
           build-mode: ${{ matrix.build-mode }}
       - name: Build full Swift application
         if: matrix.language == 'swift'
-        run: bash scripts/build-codeql.sh
+        timeout-minutes: 5
+        run: bash -x scripts/build-codeql.sh
       - name: Analyze
         uses: github/codeql-action/analyze@24c54180a607b1449ed407dd24f251e4e9147c8d # v4
         with:
