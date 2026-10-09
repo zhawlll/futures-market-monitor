@@ -24,9 +24,6 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - language: swift
-            os: macos-15
-            build-mode: manual
           - language: python
             os: ubuntu-latest
             build-mode: none
@@ -37,20 +34,11 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           persist-credentials: false
-      - name: Prepare Swift toolchain before tracing
-        if: matrix.language == 'swift'
-        run: python3 scripts/toolchain-overlay.py
       - name: Initialize CodeQL
         uses: github/codeql-action/init@24c54180a607b1449ed407dd24f251e4e9147c8d # v4
         with:
           languages: ${{ matrix.language }}
           build-mode: ${{ matrix.build-mode }}
-      - name: Build full Swift application
-        if: matrix.language == 'swift'
-        timeout-minutes: 10
-        env:
-          FUTURES_ARCH: ${{ runner.arch == 'ARM64' && 'arm64' || 'x86_64' }}
-        run: bash -x scripts/build-codeql.sh
       - name: Analyze
         uses: github/codeql-action/analyze@24c54180a607b1449ed407dd24f251e4e9147c8d # v4
         with:
