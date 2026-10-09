@@ -10,7 +10,7 @@
 
 ## 仓库保护
 
-- `main` 要求通过 PR 更新，合并前必须通过 GitHub Actions 的 `build` 检查、保持分支最新并处理所有讨论；规则同样适用于管理员。禁止强推和删除，要求线性历史。
+- `main` 要求通过 PR 更新，合并前必须通过 `build`、三项 `CodeQL (swift/python/actions)` 任务及 `CodeQL` 安全结果检查、保持分支最新并处理所有讨论；检查限定为对应 GitHub App 提供，规则同样适用于管理员。禁止强推和删除，要求线性历史。
 - 当前为单维护者仓库，审批人数为 0；可在增加维护者后提高审批人数。
 - 已开启 Dependabot 漏洞告警与安全更新、密钥扫描及推送保护。GitHub Actions 依赖每周检查版本更新。
 - CodeQL 工作流扫描 Swift 应用、Python 脚本和 GitHub Actions；Swift 使用现有构建脚本编译完整应用，避免只扫描核心测试目标。PR、主分支更新和每周定时运行触发扫描。
