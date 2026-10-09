@@ -2,6 +2,8 @@
 
 原生 macOS 期货主力连续行情监控工具，使用 SwiftUI / AppKit。配置东方财富或新浪数据源、自选品种、显示指标及查询间隔，以可调整大小的小窗显示行情。
 
+开源仓库：[zhawlll/futures-market-monitor](https://github.com/zhawlll/futures-market-monitor)，当前版本标签为 `1.0`。
+
 ## 功能
 
 - 数据源优先配置，品种可搜索、全选、取消全选、调整顺序；指标也支持全选和取消全选。
@@ -12,47 +14,28 @@
 - 点击品种名称，在默认浏览器打开所选数据源的主连K线页面；东方财富默认日K，新浪进入后可切换日K。
 - 可选保证金比例、一手合约价值、一手保证金、手续费说明。公司资料来自东方财富期货官网公示，参考金额不等于账户实际占用。
 
-详细操作见 [使用说明](APP_README.md)，模块与验证情况见 [架构文档](doc/architecture.md)。
+详细操作见 [使用说明](APP_README.md)，模块设计见 [架构文档](doc/architecture.md)。
 
 ## 界面预览
 
-以下是实际SwiftUI视图的离屏渲染，使用人工演示数据，不是实时行情；渲染脚本见 `scripts/render-previews.sh`。
+以下为当前版本的实际应用窗口截图，展示东方财富数据源、5 个自选品种与 9 个指标。截图中的行情、保证金和手续费仅反映截取时的状态，不会随文档更新；数据口径与限制见下文。
 
-![行情小窗：成功、更新失败、首次未获取三种状态](doc/images/monitor-demo.png)
+![行情小窗：五个品种的行情、保证金比例、一手合约价值和手续费说明](doc/images/monitor-preview.png)
 
-![配置页面：品种与指标全选按钮](doc/images/configuration-demo.png)
+![监控配置：选择东方财富数据源、五个品种和九个指标](doc/images/configuration-preview.png)
 
 ## 环境与构建
 
-应用最低 macOS 14。本机验证环境为 macOS 14.6.1、Apple Silicon、Swift 6.0.3。构建需要 Apple Xcode 或 Command Line Tools（包含 macOS SDK、Swift 编译器和 iconutil），以及 Python 3，仅用于构建辅助脚本，不是应用运行依赖。
+应用需要 macOS 14 或以上。源码构建需要 Swift 6.0 或以上、Xcode 或 Command Line Tools（包含 macOS SDK），以及用于构建辅助脚本的 Python 3；应用运行无需 Python。
+
+在项目根目录执行构建并启动应用：
 
 ```bash
-bash scripts/test.sh
 bash scripts/build.sh
-"dist/期货行情监控.app/Contents/MacOS/FuturesMonitor" --self-test
 open "dist/期货行情监控.app"
 ```
 
-默认构建当前机器架构。可用 `FUTURES_ARCH=arm64` 或 `FUTURES_ARCH=x86_64` 指定架构；自检应在对应架构的机器上执行。Intel 运行尚未在本机验证。`FUTURES_OUTPUT_DIR` 可指定输出目录。应用不依赖 Python 虚拟环境或其他外部运行时。
-
-脚本使用 ad-hoc 本地签名，没有 Developer ID 签名或公证。正式下载版本应在发布说明中明确签名状态；如需发行给普通用户，应另行完成 Developer ID 签名及公证。这里只提供源码和本地构建流程。
-
-## 验证
-
-`bash scripts/test.sh` 运行独立的 Swift Testing 单元与集成测试，可用 `--filter MonitorStoreTests` 筛选测试。测试支持 Swift 6.0.3 及更高版本，使用代码内人工构造的最小响应和可控模拟服务，不访问行情网站。测试按功能组织于 `Tests/`，失败后其他测试仍会执行；5秒节流与轮询检查标记为 `.slow`。
-
-`--self-test` 用于应用包冒烟检查，验证目录资源、模拟查询、配置恢复和暂停；不修改用户真实配置。本次完整本地回归的56项测试、8项应用包自检及手动联网样本检查通过，详细范围与重试情况见 [版本验证](APP_VERIFICATION.md)。首次推送的 GitHub Actions 离线构建、测试和自检已通过；`main` 已启用分支保护。后续提交以各自的 CI 结果为准，安全功能见 [安全说明](SECURITY.md)。
-
-```bash
-# 手动联网检查，会实际访问东方财富与新浪；不要放进每次PR的自动测试
-"dist/期货行情监控.app/Contents/MacOS/FuturesMonitor" --live-check
-# 生成只包含公开文件的源码zip，不需要初始化Git
-python3 scripts/package-source.py
-# 将默认dist目录内的应用打包，保留UTF-8文件名和可执行权限
-python3 scripts/package-app.py
-```
-
-联网验证可能因交易时段、网络、接口变化或提供方限制失败。CI只执行离线测试与应用包自检。[验证地图](doc/tests.md)区分已有测试与未覆盖项。
+默认构建当前机器架构，应用输出到 `dist/期货行情监控.app`。启动后选择数据源、品种、指标和查询间隔，点击“保存并开始监控”；行情窗口支持暂停、置顶和打开设置。详细操作见 [使用说明](APP_README.md)。
 
 ## 数据口径与限制
 
@@ -70,8 +53,9 @@ python3 scripts/package-app.py
 | `Resources/` | 应用元信息与最小品种标识目录 |
 | `Tests/` | 按功能组织的 Swift Testing 单元与集成测试及人工输入 |
 | `Tests/Fixtures/` | 仅目录编码检查文本，无HTML/JSON样本 |
-| `scripts/` | 测试、构建、图标生成、工具链兼容和源码打包 |
-| `doc/` | 架构、流程、权限、配置、轮询、验证说明 |
+| `scripts/` | 测试、构建、图标生成、工具链兼容、源码与应用打包 |
+| `doc/` | 架构、流程、权限、配置、轮询、验证说明及界面截图 |
+| `.github/` | 离线构建、CodeQL、Dependabot 及 Issue/PR 模板 |
 
 ## 贡献与许可
 
