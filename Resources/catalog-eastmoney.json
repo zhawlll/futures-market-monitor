@@ -1,0 +1,542 @@
+[
+  {
+    "id": "em:113.fum",
+    "name": "燃油",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.bum",
+    "name": "沥青",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.brm",
+    "name": "丁二烯胶",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.rum",
+    "name": "橡胶",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.cum",
+    "name": "沪铜",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.snm",
+    "name": "沪锡",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.opm",
+    "name": "胶版纸",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.wrm",
+    "name": "线材",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.spm",
+    "name": "纸浆",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.pbm",
+    "name": "沪铅",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.aom",
+    "name": "氧化铝",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.adm",
+    "name": "铸造铝",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.znm",
+    "name": "沪锌",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.hcm",
+    "name": "热卷",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.aum",
+    "name": "沪金",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.rbm",
+    "name": "螺纹钢",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.alm",
+    "name": "沪铝",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.ssm",
+    "name": "不锈钢",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.nim",
+    "name": "沪镍",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:113.agm",
+    "name": "沪银",
+    "exchange": "SHFE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.pgm",
+    "name": "LPG",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.bzm",
+    "name": "纯苯",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.ebm",
+    "name": "苯乙烯",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.lFm",
+    "name": "塑料月均",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.egm",
+    "name": "乙二醇",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.ppFm",
+    "name": "聚丙烯月均",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.ppm",
+    "name": "聚丙烯",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.lm",
+    "name": "塑料",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.jmm",
+    "name": "焦煤",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.am",
+    "name": "豆一",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.bm",
+    "name": "豆二",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.mm",
+    "name": "豆粕",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.jdm",
+    "name": "鸡蛋",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.lgm",
+    "name": "原木",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.jm",
+    "name": "焦炭",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.vFm",
+    "name": "PVC月均",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.ym",
+    "name": "豆油",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.vm",
+    "name": "PVC",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.pm",
+    "name": "棕榈油",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.bbm",
+    "name": "胶合板",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.rrm",
+    "name": "粳米",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.cm",
+    "name": "玉米",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.csm",
+    "name": "淀粉",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.lhm",
+    "name": "生猪",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.fbm",
+    "name": "纤维板",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:114.im",
+    "name": "铁矿石",
+    "exchange": "DCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.MAM",
+    "name": "甲醇",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.PXM",
+    "name": "对二甲苯",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.TAM",
+    "name": "PTA",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.PFM",
+    "name": "短纤",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.PRM",
+    "name": "瓶片",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.PLM",
+    "name": "丙烯",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.SRM",
+    "name": "白糖",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.RMM",
+    "name": "菜粕",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.SFM",
+    "name": "硅铁",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.OIM",
+    "name": "菜油",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.CYM",
+    "name": "棉纱",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.APM",
+    "name": "苹果",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.CFM",
+    "name": "棉花",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.SAM",
+    "name": "纯碱",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.SMM",
+    "name": "锰硅",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.URM",
+    "name": "尿素",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.RSM",
+    "name": "菜籽",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.RIM",
+    "name": "早籼稻",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.ZCM",
+    "name": "动力煤",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.JRM",
+    "name": "粳稻",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.PMM",
+    "name": "普麦",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.WHM",
+    "name": "强麦",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.SHM",
+    "name": "烧碱",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.FGM",
+    "name": "玻璃",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.PKM",
+    "name": "花生",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:115.CJM",
+    "name": "红枣",
+    "exchange": "CZCE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:142.lum",
+    "name": "低硫燃油",
+    "exchange": "INE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:142.scm",
+    "name": "原油",
+    "exchange": "INE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:142.ecm",
+    "name": "欧线集运",
+    "exchange": "INE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:142.nrm",
+    "name": "20号胶",
+    "exchange": "INE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:142.bcm",
+    "name": "国际铜",
+    "exchange": "INE",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:220.IHM",
+    "name": "上证",
+    "exchange": "CFFEX",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:220.TSM",
+    "name": "二债",
+    "exchange": "CFFEX",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:220.TFM",
+    "name": "五债",
+    "exchange": "CFFEX",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:220.TM",
+    "name": "十债",
+    "exchange": "CFFEX",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:220.TLM",
+    "name": "三十债",
+    "exchange": "CFFEX",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:220.IFM",
+    "name": "沪深",
+    "exchange": "CFFEX",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:220.IMM",
+    "name": "中证1000股指",
+    "exchange": "CFFEX",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:220.ICM",
+    "name": "中证500股指",
+    "exchange": "CFFEX",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:225.lcm",
+    "name": "碳酸锂",
+    "exchange": "GFEX",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:225.psm",
+    "name": "多晶硅",
+    "exchange": "GFEX",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:225.sim",
+    "name": "工业硅",
+    "exchange": "GFEX",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:225.ptm",
+    "name": "铂",
+    "exchange": "GFEX",
+    "base": "eastmoney"
+  },
+  {
+    "id": "em:225.pdm",
+    "name": "钯",
+    "exchange": "GFEX",
+    "base": "eastmoney"
+  }
+]

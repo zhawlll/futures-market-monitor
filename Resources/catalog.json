@@ -1,0 +1,518 @@
+[
+  {
+    "id": "pta_qh",
+    "name": "PTA",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "czy_qh",
+    "name": "菜油",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "ycz_qh",
+    "name": "菜籽",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "czp_qh",
+    "name": "菜粕",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "dlm_qh",
+    "name": "动力煤",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "qm_qh",
+    "name": "强麦",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "jdm_qh",
+    "name": "粳稻",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "bst_qh",
+    "name": "白糖",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "mh_qh",
+    "name": "棉花",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "zxd_qh",
+    "name": "早籼稻",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "zc_qh",
+    "name": "郑醇",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "bl_qh",
+    "name": "玻璃",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "wxd_qh",
+    "name": "晚籼稻",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "gt_qh",
+    "name": "硅铁",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "mg_qh",
+    "name": "锰硅",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "ms_qh",
+    "name": "棉纱",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "xpg_qh",
+    "name": "鲜苹果",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "hz_qh",
+    "name": "红枣",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "ns_qh",
+    "name": "尿素",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "cj_qh",
+    "name": "纯碱",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "pf_qh",
+    "name": "短纤",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "pk_qh",
+    "name": "花生",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "sh_qh",
+    "name": "烧碱",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "px_qh",
+    "name": "二甲苯",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "pr_qh",
+    "name": "瓶级聚酯切片",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "pl_qh",
+    "name": "丙烯",
+    "exchange": "CZCE",
+    "base": "futures"
+  },
+  {
+    "id": "pvc_qh",
+    "name": "PVC",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "zly_qh",
+    "name": "棕榈",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "de_qh",
+    "name": "豆二",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "dp_qh",
+    "name": "豆粕",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "tks_qh",
+    "name": "铁矿石",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "jd_qh",
+    "name": "鸡蛋",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "lldpe_qh",
+    "name": "塑料",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "jbx_qh",
+    "name": "PP",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "xwb_qh",
+    "name": "纤维板",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "jhb_qh",
+    "name": "胶合板",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "dy_qh",
+    "name": "豆油",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "hym_qh",
+    "name": "玉米",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "dd_qh",
+    "name": "豆一",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "jt_qh",
+    "name": "焦炭",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "jm_qh",
+    "name": "焦煤",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "ymdf_qh",
+    "name": "玉米淀粉",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "yec_qh",
+    "name": "乙二醇",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "gm_qh",
+    "name": "粳米",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "byx_qh",
+    "name": "苯乙烯",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "pg_qh",
+    "name": "液化石油气",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "lh_qh",
+    "name": "生猪",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "lg_qh",
+    "name": "原木",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "bz_qh",
+    "name": "纯苯",
+    "exchange": "DCE",
+    "base": "futures"
+  },
+  {
+    "id": "ry_qh",
+    "name": "燃油",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "yy_qh",
+    "name": "原油",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "lv_qh",
+    "name": "沪铝",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "xj_qh",
+    "name": "橡胶",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "xing_qh",
+    "name": "沪锌",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "tong_qh",
+    "name": "沪铜",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "hj_qh",
+    "name": "黄金",
+    "exchange": "SHFE",
+    "base": "futures.fu_dig2"
+  },
+  {
+    "id": "lwg_qh",
+    "name": "螺纹钢",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "xc_qh",
+    "name": "线材",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "qian_qh",
+    "name": "沪铅",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "by_qh",
+    "name": "白银",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "lq_qh",
+    "name": "沥青",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "rzjb_qh",
+    "name": "热轧卷板",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "xi_qh",
+    "name": "沪锡",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "ni_qh",
+    "name": "沪镍",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "zj_qh",
+    "name": "纸浆",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "ehj_qh",
+    "name": "20号胶",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "bxg_qh",
+    "name": "不锈钢",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "lu_qh",
+    "name": "低硫燃料油",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "bc_qh",
+    "name": "国际铜",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "ao_qh",
+    "name": "氧化铝",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "br_qh",
+    "name": "丁二烯橡胶",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "ec_qh",
+    "name": "集运指数(欧线)期货",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "ad_qh",
+    "name": "铸造铝合金期货",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "op_qh",
+    "name": "胶版印刷纸期货",
+    "exchange": "SHFE",
+    "base": "futures"
+  },
+  {
+    "id": "qz_qh",
+    "name": "沪深300指数期货",
+    "exchange": "CFFEX",
+    "base": "futuresindex"
+  },
+  {
+    "id": "gz_qh",
+    "name": "5年期国债期货",
+    "exchange": "CFFEX",
+    "base": "futuresindex"
+  },
+  {
+    "id": "sngz_qh",
+    "name": "10年期国债期货",
+    "exchange": "CFFEX",
+    "base": "futuresindex"
+  },
+  {
+    "id": "szgz_qh",
+    "name": "上证50指数期货",
+    "exchange": "CFFEX",
+    "base": "futuresindex"
+  },
+  {
+    "id": "zzgz_qh",
+    "name": "中证500指数期货",
+    "exchange": "CFFEX",
+    "base": "futuresindex"
+  },
+  {
+    "id": "engz_qh",
+    "name": "2年期国债期货",
+    "exchange": "CFFEX",
+    "base": "futuresindex"
+  },
+  {
+    "id": "im_qh",
+    "name": "中证1000股指期货",
+    "exchange": "CFFEX",
+    "base": "futuresindex"
+  },
+  {
+    "id": "si_qh",
+    "name": "工业硅",
+    "exchange": "GFEX",
+    "base": "gfuturesindex"
+  },
+  {
+    "id": "lc_qh",
+    "name": "碳酸锂",
+    "exchange": "GFEX",
+    "base": "gfuturesindex"
+  },
+  {
+    "id": "ps_qh",
+    "name": "多晶硅",
+    "exchange": "GFEX",
+    "base": "gfuturesindex"
+  },
+  {
+    "id": "pt_qh",
+    "name": "铂",
+    "exchange": "GFEX",
+    "base": "gfuturesindex"
+  },
+  {
+    "id": "pd_qh",
+    "name": "钯",
+    "exchange": "GFEX",
+    "base": "gfuturesindex"
+  }
+]

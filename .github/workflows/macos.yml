@@ -1,0 +1,27 @@
+name: macOS build and offline tests
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Build
+        run: bash scripts/build.sh
+      - name: Swift Testing unit and integration tests
+        run: bash scripts/test.sh
+      - name: Offline self-tests
+        run: '"dist/期货行情监控.app/Contents/MacOS/FuturesMonitor" --self-test'
+      - name: Verify bundle
+        run: |
+          codesign --verify --deep --strict "dist/期货行情监控.app"
+          plutil -lint "dist/期货行情监控.app/Contents/Info.plist"
+      - name: Check public source package
+        run: python3 scripts/package-source.py
